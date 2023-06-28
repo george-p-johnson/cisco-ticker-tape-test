@@ -1,13 +1,16 @@
 #videoContainer{
-  position:relative;
+  position: relative;
   overflow:hidden;
-  height: 500px;
-  width: 500px;
+  height: 100vh;
+  width: 100vh;
+  text-align: center;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  background-image: url(/bg.png);
+  /* background-image: url(/bg.png); */
+  background-color: #182B60;
 }
+
 #videoContainer .frame{
   position:absolute;
   top:0;
@@ -20,7 +23,7 @@
   
 #videoContainer .tickerTape{
   left:0%;
-  bottom:11rem;
+  bottom:20rem;
   position:absolute;
   display:block;
   width:100%;
@@ -28,31 +31,22 @@
   color:#FFF;
   z-index:2;
   box-sizing:border-box;
-  padding: 1rem 0.25rem;
-  font-weight:100;
+  padding: 1rem 1.25rem;
   font-family:cisco-sans-bold, sans-serif;
-
   overflow:hidden;
-  height:8rem;
+  height:20rem;
 }
 .text{
   position:absolute;
   left:0%;
-  animation:slideIt 5s linear;
+  animation:slideIt 15s linear;
   font-size: 2rem;
+  padding: 2rem;
 }
 
 @keyframes slideIt{
-  0%{left:-150%;}
+  0%{left:-400%;}
   100%{left:15%;
-}
-
-.dot {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
 }
 
 @font-face {
